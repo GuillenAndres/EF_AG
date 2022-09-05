@@ -1,0 +1,22 @@
+{% extends 'index.html' %}
+
+{% block title %}
+
+Busqueda Tipo
+
+{% endblock %}
+
+{% block inicio %}
+
+    <form action="/AppBuild/busqueda_tipo_post" method="GET">
+    {% csrf_token %}
+
+        {{ form.as_p }}
+
+        <input type="submit" value="Buscar">
+
+    </form>
+
+
+{% endblock %}
+

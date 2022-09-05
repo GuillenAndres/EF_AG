@@ -1,0 +1,18 @@
+{% extends 'index.html' %}
+
+{% block title %}
+
+Busqueda Tipo Filtrado
+
+{% endblock %}
+
+{% block inicio %}
+
+    {% for tipo in obras %}
+        El tipo de constuccion es {{ tipo.tipo }} y su construccion inicio el {{ tipo.inicio }}
+        <br>
+    {% endfor %}
+
+
+{% endblock %}
+
